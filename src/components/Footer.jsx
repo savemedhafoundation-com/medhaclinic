@@ -33,7 +33,7 @@ const Footer = () => {
           </p>
           <button
             type="button"
-            className="mt-6 rounded-md bg-white px-6 py-2.5 text-sm font-semibold text-slate-900 shadow-sm"
+            className="mt-6 rounded-md cursor-pointer bg-white px-6 py-2.5 text-sm font-semibold hover:bg-[#e2f0f8] text-slate-900 shadow-sm"
           >
             Talk to Our Team
           </button>
