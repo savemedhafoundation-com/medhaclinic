@@ -1,35 +1,68 @@
-import logo from '../assets/photos/Asset24.png'
+import logo from "../assets/photos/Asset 36.png";
+import facebookIcon from "../assets/social_icons/Facebook F.png";
+import instagramIcon from "../assets/social_icons/Instagram Circle.png";
+import linkedinIcon from "../assets/social_icons/LinkedIn 2.png";
+import whatsappIcon from "../assets/social_icons/WhatsApp.png";
+import youtubeIcon from "../assets/social_icons/YouTube Logo.png";
 
 const Footer = () => {
   const exploreLinks = [
-    'Home',
-    'Why Medha Clinic',
-    'Treatment Process',
-    'Consultation',
-    'About Us',
-    'Contact',
-  ]
+    "Home",
+    "Why Medha Clinic",
+    "Treatment Process",
+    "Consultation",
+    "About Us",
+    "Contact",
+  ];
 
   const legalLinks = [
-    'Medical disclaimer',
-    'Patient consent',
-    'Privacy policy',
-    'Terms of care',
-  ]
+    "Medical disclaimer",
+    "Patient consent",
+    "Privacy policy",
+    "Terms of care",
+  ];
 
-  const socialLinks = ['Facebook', 'Instagram', 'LinkedIn', 'WhatsApp', 'YouTube']
+  const socialLinks = [
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/savemedhafoundation",
+      icon: facebookIcon,
+    },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/savemedhafoundation/",
+      icon: instagramIcon,
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/company/save-medha-foundation/",
+      icon: linkedinIcon,
+    },
+    {
+      name: "WhatsApp",
+      href: "https://wa.me/919800808595",
+      icon: whatsappIcon,
+    },
+    {
+      name: "YouTube",
+      href: "https://www.youtube.com/@savemedhafoundation7959",
+      icon: youtubeIcon,
+    },
+  ];
 
   return (
-    <footer className="bg-[#1396e6] text-white">
-      <div className="mx-auto max-w-6xl px-6 pt-14 pb-8">
+    <footer
+      className="bg-[#089EF9] text-white h-auto [mask:radial-gradient(55%_160px_at_top,#0000_calc(100%-5px),#000)] "
+    >
+      <div className="mx-auto max-w-6xl px-6 pt-50 pb-8">
         <div className="text-center">
           <h2 className="font-['Playfair_Display'] text-2xl font-semibold sm:text-3xl">
             Connect with Medha Clinic
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/90 sm:text-base">
-            Better health begins with a simple hello. Our team is ready to collaborate
-            with you to reach your wellness goals by phone, email, or visit us in
-            person. We look forward to seeing you.
+            Better health begins with a simple hello. Our team is ready to
+            collaborate with you to reach your wellness goals by phone, email,
+            or visit us in person. We look forward to seeing you.
           </p>
           <button
             type="button"
@@ -39,12 +72,12 @@ const Footer = () => {
           </button>
         </div>
 
-        <div className="mt-8 h-px bg-white/40" />
+        <div className="mt-8 h-0.5 bg-white/100" />
 
         <div className="mt-8 grid gap-8 text-sm md:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
-            <div className="inline-flex items-center rounded-md bg-white px-3 py-2 shadow-sm">
-              <img src={logo} alt="Medha Clinic logo" className="h-10 w-auto" />
+            <div className="relative inline-flex items-center rounded-md bg-[linear-gradient(to_right,#ffffff_0px,#f2faff_120px,transparent_180px)] px-3 py-2">
+              <img src={logo} alt="Medha Clinic logo" className="h-12 w-auto " />
             </div>
             <p className="mt-4 text-base font-semibold leading-relaxed text-white">
               <span className="block">We listen first.</span>
@@ -55,9 +88,9 @@ const Footer = () => {
 
           <div>
             <h3 className="text-base font-semibold">Explore</h3>
-            <div className="mt-3 flex flex-col gap-2 text-white/90">
+            <div className="mt-3 flex flex-col gap-2 text-white">
               {exploreLinks.map((item) => (
-                <a key={item} href="#" className="hover:text-white">
+                <a key={item} href="#" className="hover:opacity-80">
                   {item}
                 </a>
               ))}
@@ -66,9 +99,9 @@ const Footer = () => {
 
           <div>
             <h3 className="text-base font-semibold">Legal</h3>
-            <div className="mt-3 flex flex-col gap-2 text-white/90">
+            <div className="mt-3 flex flex-col gap-2 text-white">
               {legalLinks.map((item) => (
-                <a key={item} href="#" className="hover:text-white">
+                <a key={item} href="#" className="hover:opacity-80">
                   {item}
                 </a>
               ))}
@@ -91,8 +124,14 @@ const Footer = () => {
           </a>
           <div className="flex flex-wrap items-center gap-4">
             {socialLinks.map((item) => (
-              <a key={item} href="#" className="hover:text-white">
-                {item}
+              <a
+                key={item.name}
+                href={item.href}
+                className="rounded-full fo transition hover:opacity-50 px-1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={item.icon} alt={item.name} className="h-8 w-7" />
               </a>
             ))}
           </div>
@@ -102,11 +141,12 @@ const Footer = () => {
         </div>
 
         <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-xs font-medium text-slate-700">
-          Copyright 2025 Medha Clinic. All rights reserved. Powered by Medha Clinic.
+          Copyright 2025 Medha Clinic. All rights reserved. Powered by Medha
+          Clinic.
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

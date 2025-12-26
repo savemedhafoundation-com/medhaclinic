@@ -20,12 +20,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-transparent">
       <div className="mx-auto max-w-full px-4 py-4">
-        <div className="grid items-center gap-6 rounded-2xl border border-[#b9d7f2] bg-white px-5 py-3 shadow-[0_2px_10px_rgba(15,23,42,0.08)] md:grid-cols-[auto_1fr_auto]">
+        <div className="grid items-center gap-6 rounded-2xl border border-[#b9d7f2] bg-white lg:pl-45 py-3 md:pl-10 shadow-[0_2px_10px_rgba(15,23,42,0.08)] md:grid-cols-[auto_1fr_auto]">
           <div className="flex items-center">
             <img src={logo} alt="Medha Clinic logo" className="lg:h-12 md:h-10 w-auto cursor-pointer" />
           </div>
           <nav
-            className="flex items-center justify-center lg:gap-6 md:gap-4 lg:text-[17px] md:text-[14px] font-medium text-slate-700"
+            className="flex items-center justify-center lg:gap-15 md:gap-4 lg:text-[17px] md:text-[14px] font-medium text-slate-700"
             aria-label="Primary"
           >
             {navItems.map((item) => (
@@ -69,7 +69,9 @@ const Header = () => {
                 ) : null}
               </div>
             ))}
-             <div className="hidden justify-center items-center md:flex md:justify-end">
+             
+          </nav>
+         <div className="hidden justify-center items-center md:flex md:justify-end lg:pr-50 md:pr-10">
             <button
               type="button"
               className="rounded-[5px] bg-[#1f8fe6] justify-center items-center cursor-pointer px-4 py-1 lg:text-[18px] md:text-[15px] font-semibold text-white hover:bg-[#17a5fd]  shadow-bottom-md"
@@ -77,8 +79,6 @@ const Header = () => {
               Contact
             </button>
           </div>
-          </nav>
-         
         </div>
       </div>
     </header>
