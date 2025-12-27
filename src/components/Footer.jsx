@@ -140,7 +140,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-xs font-medium text-slate-700">
+        <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-sm font-medium text-slate-700">
           Copyright 2025 Medha Clinic. All rights reserved. Powered by Medha
           Clinic.
         </div>
