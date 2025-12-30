@@ -1,4 +1,4 @@
-import logo from "../assets/photos/Asset 36.png";
+import logo from "../assets/photos/Asset 23.png";
 import facebookIcon from "../assets/social_icons/Facebook F.png";
 import instagramIcon from "../assets/social_icons/Instagram Circle.png";
 import linkedinIcon from "../assets/social_icons/LinkedIn 2.png";
@@ -73,7 +73,7 @@ const Footer = () => {
           </p>
           <button
             type="button"
-            className="mt-6 rounded-md cursor-pointer bg-white px-6 py-2.5 text-sm font-semibold hover:bg-[#e2f0f8] text-slate-900 shadow-sm"
+            className="mt-6 rounded-md cursor-pointer bg-white px-6 py-2.5 text-xl font-semibold hover:bg-[#e2f0f8] text-slate-900 shadow-sm"
           >
             Talk to Our Team
           </button>
@@ -81,12 +81,12 @@ const Footer = () => {
 
         <div className="mt-8 h-0.5 bg-white/100" />
 
-        <div className="mt-8 grid gap-8 text-sm md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div className="mt-8 grid gap-8 text-sm md:grid-cols-[1.5fr_1fr_1fr_1fr] px-13">
           <div>
-            <div className="relative inline-flex items-center rounded-md bg-[linear-gradient(to_right,#ffffff_0px,#f2faff_120px,transparent_180px)] px-3 py-2">
-              <img src={logo} alt="Medha Clinic logo" className="h-12 w-auto " />
+            <div className="relative inline-flex items-center rounded-md bg-transparent  py-2">
+              <img src={logo} alt="Medha Clinic logo" className="h-18 w-auto " />
             </div>
-            <p className="mt-4 text-base font-semibold leading-relaxed text-white">
+            <p className="mt-4 text-lg font-semibold leading-relaxed text-white">
               <span className="block">We listen first.</span>
               <span className="block">We explain clearly.</span>
               <span className="block">We never force decisions.</span>
@@ -125,8 +125,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col gap-4 text-xs text-white/90 sm:flex-row sm:items-center sm:justify-between">
-          <a href="#" className="font-semibold hover:text-white">
+        <div className="mt-8 flex flex-col font-italic gap-4 text-md text-white/90 sm:flex-row sm:items-center sm:justify-between">
+          <a href="#" className="font-semibold hover:text-white px-2 ">
             Privacy policy
           </a>
           <div className="flex flex-wrap items-center gap-4">
@@ -142,12 +142,12 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <a href="#" className="font-semibold hover:text-white">
+          <a href="#" className="font-semibold hover:text-white px-2">
             Terms of care
           </a>
         </div>
 
-        <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-sm font-medium text-slate-700">
+        <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-sm font-medium text-black">
           Copyright 2025 Medha Clinic. All rights reserved. Powered by Medha
           Clinic.
         </div>

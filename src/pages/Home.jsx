@@ -8,7 +8,7 @@ import welcomeImage from '../assets/photos/Group 9365.png'
 import whoImageTop from '../assets/photos/Rectangle 518.png'
 import whoImageBottom from '../assets/photos/Rectangle 517.png'
 import approachImage from '../assets/photos/Rectangle 13.png'
-import appointmentImage from '../assets/photos/Rectangle 530.png'
+import appointmentImage from '../assets/photos/Rectangle 539.png'
 
 const Home = () => {
   return (
@@ -541,8 +541,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="relative overflow-hidden  bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] px-6 py-16 text-white  ">
-          <div className="mx-auto grid max-w-6xl h-100 items-center pb-30 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="relative overflow-hidden bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] px-6 pt-20 pb-16 text-white">
+          
+          <div className="relative z-10 mx-auto grid max-w-6xl h-100 items-center pb-30 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
                 Treatment Philosophy (High-Level)
@@ -585,7 +586,7 @@ const Home = () => {
           
         </section>
 
-        <section className="relative min-h-250 h-250 px-6 py-16  ">
+        <section className="relative h-180 px-6 py-16">
           <div className="absolute inset-0">
             <img
               src={appointmentImage}
@@ -594,12 +595,23 @@ const Home = () => {
             />
             <div className="absolute inset-0 bg-white/75" />
           </div>
-          <div className="relative z-10 mx-auto grid max-w-6xl h-100 items-center pt-65 gap-10 lg:grid-cols-[1fr_1.05fr]">
-            <div className="text-[#1f2b6c]">
-              <h2 className="font-poppins text-2xl font-semibold sm:text-4xl">
+          <svg
+            className="pointer-events-none absolute top-0 left-0 z-[1] h-15 w-full"
+            viewBox="0 0 1440 120"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M0,120 C240,40 480,0 720,0 C960,0 1200,40 1440,120 L1440,0 L0,0 Z"
+              fill="#1f2b6c"
+            />
+          </svg>
+          <div className="relative z-10 mx-auto grid max-w-6xl h-100 items-start pt-20 gap-12 lg:grid-cols-[1fr_1.05fr]">
+            <div className="max-w-md text-[#1f2b6c]">
+              <h2 className="font-poppins text-2xl font-semibold text-[#1f8fe6] sm:text-3xl">
                 Book an Appointment
               </h2>
-              <ol className="mt-4 space-y-2 text-lg text-slate-700 ">
+              <ol className="mt-3 space-y-1.5 text-sm leading-relaxed text-slate-700 sm:text-base">
                 <li>1. You share your reports and health history</li>
                 <li>2. We listen without judgment or pressure</li>
                 <li>3. Medha Clinic explains findings clearly</li>
@@ -607,7 +619,11 @@ const Home = () => {
                 <li>5. You decide - without obligation</li>
               </ol>
             </div>
-            <Appointment />
+            <div className="flex w-full justify-center lg:justify-end">
+              <div className="w-full max-w-lg">
+                <Appointment />
+              </div>
+            </div>
           </div>
           <svg
             className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-transparent " 
