@@ -1,4 +1,5 @@
 import logo from '../assets/photos/Asset24.png'
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const navItems = [
@@ -17,10 +18,22 @@ const Header = () => {
     { label: 'About Us', href: '#' },
   ]
 
+const [isScrolled, setIsScrolled] = useState(false);
+
+useEffect(() => {
+  const onScroll = () => {
+    setIsScrolled(window.scrollY > 10);
+  };
+
+  window.addEventListener("scroll", onScroll);
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
+
+
   return (
-    <header className="sticky top-0 z-50 bg-transparent">
+    <header className="sticky top-0 z-50 bg-transparent ">
       <div className="mx-auto max-w-full px-4 py-4">
-        <div className="grid items-center gap-6 rounded-2xl border border-[#b9d7f2] bg-white lg:pl-45 py-3 md:pl-10 shadow-[0_2px_10px_rgba(15,23,42,0.08)] md:grid-cols-[auto_1fr_auto]">
+        <div className={`grid items-center gap-6 rounded-2xl border border-[#b9d7f2]  lg:pl-45 py-3 md:pl-10 shadow-[0_2px_10px_rgba(15,23,42,0.08)] md:grid-cols-[auto_1fr_auto] ${isScrolled ? "backdrop-blur-lg bg-white/70" : " bg-white"}`}>
           <div className="flex items-center">
             <img src={logo} alt="Medha Clinic logo" className="lg:h-12 md:h-10 w-auto cursor-pointer" />
           </div>

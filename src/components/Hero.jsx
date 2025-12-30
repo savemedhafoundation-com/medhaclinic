@@ -2,7 +2,7 @@ import heroImage from '../assets/photos/Group 9318.png'
 
 const Hero = () => {
   return (
-    <section className="-mt-6 bg-[#e5e5e5] md:-mt-30">
+    <section className=" bg-[#e5e5e5] xl:-mt-45 lg:-mt-50 md:-mt-50">
       <div className="mx-auto max-w-full ">
         <div
           className="relative h-200 overflow-hidden  bg-cover bg-center bg-no-repeat px-6 py-10 shadow-[0_6px_16px_rgba(15,23,42,0.12)]  sm:px-50 sm:py-12"

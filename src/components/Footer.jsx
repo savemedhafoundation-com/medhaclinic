@@ -4,6 +4,7 @@ import instagramIcon from "../assets/social_icons/Instagram Circle.png";
 import linkedinIcon from "../assets/social_icons/LinkedIn 2.png";
 import whatsappIcon from "../assets/social_icons/WhatsApp.png";
 import youtubeIcon from "../assets/social_icons/YouTube Logo.png";
+import footerPattern from "../assets/photos/Object 28.png";
 
 const Footer = () => {
   const exploreLinks = [
@@ -52,9 +53,15 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-[#089EF9] text-white h-auto [mask:radial-gradient(55%_160px_at_top,#0000_calc(100%-5px),#000)] "
+      className="relative h-auto overflow-hidden bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] text-white"
     >
-      <div className="mx-auto max-w-6xl px-6 pt-50 pb-8">
+      <img
+        src={footerPattern}
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover object-bottom translate-y-[80px] scale-100  mix-blend-screen"
+      />
+      <div className="relative z-10 mx-auto max-w-6xl px-6 pt-20 pb-8 ">
         <div className="text-center">
           <h2 className="font-['Playfair_Display'] text-2xl font-semibold sm:text-3xl">
             Connect with Medha Clinic

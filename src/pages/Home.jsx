@@ -2,11 +2,13 @@ import Header from '../components/header'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import Specialties from '../components/specialties'
+import Appointment from '../components/appointment'
 import talkBanner from '../assets/photos/Rectangle 463.png'
 import welcomeImage from '../assets/photos/Group 9365.png'
 import whoImageTop from '../assets/photos/Rectangle 518.png'
 import whoImageBottom from '../assets/photos/Rectangle 517.png'
 import approachImage from '../assets/photos/Rectangle 13.png'
+import appointmentImage from '../assets/photos/Rectangle 530.png'
 
 const Home = () => {
   return (
@@ -212,7 +214,7 @@ const Home = () => {
             </div>
           </div>
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 w-full scale-y-105 bg-gradient-to-b from-[#ffffff] via-[#d3ebfa] to-[#B7E4FF] " 
+            className="pointer-events-none absolute bottom-0 left-0 h-15 w-full scale-y-105 bg-gradient-to-b from-[#ffffff] via-[#d3ebfa] to-[#a7ddff] " 
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
             aria-hidden="true" 
@@ -227,7 +229,7 @@ const Home = () => {
 
         <section className="relative h-230 overflow-hidden bg-gradient-to-b from-[#f0f8fe] via-white to-[#089EF9] px-6 py-16">  
           <svg
-            className="absolute bottom-0 left-0 h-35 w-full"
+            className="absolute bottom-0 left-0 h-15 w-full"
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
             aria-hidden="true"
@@ -411,7 +413,7 @@ const Home = () => {
           </div>
 
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 h-25 w-full"
+            className="pointer-events-none absolute bottom-0 left-0 h-15 w-full"
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
             aria-hidden="true"
@@ -423,7 +425,7 @@ const Home = () => {
           </svg>
         </section>
 
-        <section className="bg-[#1f2b6c] px-6 py-12 text-white">
+        <section className="bg-[#1f2b6c] px-6 py-10 h-40 text-white">
           <div className="mx-auto max-w-6xl text-center">
             <p className="text-lg font-semibold uppercase tracking-[0.35em] text-white/70">
               Who Medha Clinic Is Not For (Safety Boundary)
@@ -440,13 +442,18 @@ const Home = () => {
               For ethical and medical reasons, Medha Clinic does not replace emergency or critical
               hospital care.
             </h2>
-            <p className="mt-4 text-sm text-white/90 sm:text-base">
+            <p className="mt-4 text-[20px] text-white/90 ">
               Please seek immediate hospital care if there is:
             </p>
           </div>
 
-          <div className="relative z-10 mx-auto mt-8 max-w-4xl rounded-2xl bg-white/15 p-6 text-left shadow-[0_18px_40px_rgba(15,23,42,0.25)]">
-            <ul className="space-y-4 text-sm sm:text-base">
+          <div className="relative z-10 mx-auto mt-8 max-w-6xl max-h-6xl bg-[linear-gradient(90deg,transparent_0%,transparent_0%,#ffffff_20%,#ffffff_50%,#ffffff_70%,transparent_100%,transparent_10%)] p-6 text-left justify-center items-center "
+          style={{
+                clipPath:
+                  "polygon(0 18%, 50% 0, 100% 18%, 100% 85%, 50% 100%, 0 85%)",
+              }} >
+            <div className="items-center justify-center px-60 py-4">
+            <ul className="space-y-4 text-xl text-[#FF0022] font-semibold">
               {[
                 'Severe chest pain, stroke symptoms, or heavy bleeding',
                 'ICU requirement or surgical emergency',
@@ -467,18 +474,19 @@ const Home = () => {
                       <path d="M12 4l-8 8" />
                     </svg>
                   </span>
-                  <span className="leading-relaxed text-white/90">{item}</span>
+                  <span className="leading-relaxed ">{item}</span>
                 </li>
               ))}
             </ul>
+            </div>
           </div>
 
-          <p className="relative z-10 mx-auto mt-6 max-w-3xl text-center text-sm font-semibold italic text-white/90 sm:text-base">
-            Our role is supportive and complementary - not emergency-substitutive.
+          <p className="relative z-10 mx-auto mt-6 max-w-3xl text-center text-[30px] font-semibold italic text-white/90 ">
+            Our role is supportive and complementary <br /> — not emergency-substitutive.
           </p>
 
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 w-full scale-y-105 bg-[#1f8fe6] " 
+            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-[#1f8fe6] " 
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
             aria-hidden="true" 
@@ -531,6 +539,87 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        <section className="relative overflow-hidden  bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] px-6 py-16 text-white  ">
+          <div className="mx-auto grid max-w-6xl h-100 items-center pb-30 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
+                Treatment Philosophy (High-Level)
+              </p>
+              <h2 className="mt-2 font-poppins text-2xl font-semibold sm:text-4xl">
+                Our Treatment Philosophy
+              </h2>
+              <p className="mt-4 text-sm text-white/90 sm:text-base">
+                At Medha Clinic, treatment begins with understanding - not assumptions.
+              </p>
+              <p className="mt-4 text-sm font-semibold text-white/90 sm:text-base">
+                Our approach involves:
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-white/90 sm:text-base">
+                {[
+                  'Listening carefully to patient history',
+                  'Reviewing medical reports in plain language',
+                  'Identifying internal imbalances affecting recovery',
+                  'Supporting the body through Natural Immunotherapy principles',
+                  'Monitoring progress gradually and ethically',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 rounded-full bg-white/80" />
+                    <span className="leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-xl font-semibold italic text-white/90 ">
+                We do not promise instant cures. <br /> We focus on steady, measurable improvement.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-3xl shadow-[0_20px_40px_rgba(15,23,42,0.35)]">
+              <img
+                src={approachImage}
+                alt="Clinician supporting patient care"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+          
+        </section>
+
+        <section className="relative min-h-250 h-250 px-6 py-16  ">
+          <div className="absolute inset-0">
+            <img
+              src={appointmentImage}
+              alt="Appointment consultation"
+              className="h-full w-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-white/75" />
+          </div>
+          <div className="relative z-10 mx-auto grid max-w-6xl h-100 items-center pt-65 gap-10 lg:grid-cols-[1fr_1.05fr]">
+            <div className="text-[#1f2b6c]">
+              <h2 className="font-poppins text-2xl font-semibold sm:text-4xl">
+                Book an Appointment
+              </h2>
+              <ol className="mt-4 space-y-2 text-lg text-slate-700 ">
+                <li>1. You share your reports and health history</li>
+                <li>2. We listen without judgment or pressure</li>
+                <li>3. Medha Clinic explains findings clearly</li>
+                <li>4. Safe next steps are discussed</li>
+                <li>5. You decide - without obligation</li>
+              </ol>
+            </div>
+            <Appointment />
+          </div>
+          <svg
+            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-transparent " 
+            viewBox="0 0 1440 120"
+            preserveAspectRatio="none"
+            aria-hidden="true" 
+          >
+            <path
+              d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z"
+              fill="#1f8fe6"
+            />
+          </svg>
         </section>
       </main>
       <Footer />
