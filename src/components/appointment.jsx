@@ -1,8 +1,8 @@
 const Appointment = () => {
   return (
-    <form className="overflow-hidden  rounded-[5px] bg-[#1f2b6c] text-white shadow-[0_20px_40px_rgba(15,23,42,0.25)]">
-      <div className="grid grid-cols-2 gap-px bg-white/10">
-        <div className="bg-[#1f2b6c] px-4 py-3">
+    <form className="overflow-hidden rounded-[5px] bg-[#1f2b6c] text-white shadow-[0_20px_40px_rgba(15,23,42,0.25)]">
+      <div className="grid grid-cols-1 gap-px bg-white/10 md:grid-cols-2">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-name">
             Name
           </label>
@@ -10,16 +10,16 @@ const Appointment = () => {
             id="appointment-name"
             type="text"
             placeholder="Name"
-            className="w-full bg-transparent text-xl text-white placeholder:text-white/60 focus:outline-none"
+            className="w-full bg-transparent text-[14px] text-white placeholder:text-white/60 focus:outline-none md:text-xl"
           />
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-gender">
             Gender
           </label>
           <select
             id="appointment-gender"
-            className="w-full cursor-pointer bg-transparent text-xl text-white focus:outline-none"
+            className="w-full cursor-pointer bg-transparent text-[14px] text-white focus:outline-none md:text-xl"
             defaultValue=""
           >
             <option value="" disabled className="text-slate-900">
@@ -36,7 +36,7 @@ const Appointment = () => {
             </option>
           </select>
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-email">
             Email
           </label>
@@ -44,10 +44,10 @@ const Appointment = () => {
             id="appointment-email"
             type="email"
             placeholder="Email"
-            className="w-full bg-transparent text-xl text-white placeholder:text-white/60 focus:outline-none"
+            className="w-full bg-transparent text-[14px] text-white placeholder:text-white/60 focus:outline-none md:text-xl"
           />
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-phone">
             Phone
           </label>
@@ -55,36 +55,36 @@ const Appointment = () => {
             id="appointment-phone"
             type="tel"
             placeholder="Phone"
-            className="w-full bg-transparent text-xl text-white placeholder:text-white/60 focus:outline-none"
+            className="w-full bg-transparent text-[14px] text-white placeholder:text-white/60 focus:outline-none md:text-xl"
           />
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-date">
             Date
           </label>
           <input
             id="appointment-date"
             type="date"
-            className="w-full bg-transparent text-xl text-white focus:outline-none"
+            className="w-full bg-transparent text-[14px] text-white focus:outline-none md:text-xl"
           />
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-time">
             Time
           </label>
           <input
             id="appointment-time"
             type="time"
-            className="w-full bg-transparent text-xl text-white focus:outline-none"
+            className="w-full bg-transparent text-[14px] text-white focus:outline-none md:text-xl"
           />
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-doctor">
             Doctor
           </label>
           <select
             id="appointment-doctor"
-            className="w-full cursor-pointer bg-transparent text-xl text-white focus:outline-none"
+            className="w-full cursor-pointer bg-transparent text-[14px] text-white focus:outline-none md:text-xl"
             defaultValue=""
           >
             <option value="" disabled className="text-slate-900">
@@ -95,13 +95,13 @@ const Appointment = () => {
             </option>
           </select>
         </div>
-        <div className="bg-[#1f2b6c] px-4 py-3">
+        <div className="bg-[#1f2b6c] px-3 py-2.5 md:px-4 md:py-3">
           <label className="sr-only" htmlFor="appointment-department">
             Department
           </label>
           <select
             id="appointment-department"
-            className="w-full cursor-pointer bg-transparent text-xl text-white focus:outline-none"
+            className="w-full cursor-pointer bg-transparent text-[14px] text-white focus:outline-none md:text-xl"
             defaultValue=""
           >
             <option value="" disabled className="text-slate-900">
@@ -112,7 +112,7 @@ const Appointment = () => {
             </option>
           </select>
         </div>
-        <div className="col-span-2 bg-[#1f2b6c] px-4 py-4">
+        <div className="col-span-1 bg-[#1f2b6c] px-3 py-3 md:col-span-2 md:px-4 md:py-4">
           <label className="sr-only" htmlFor="appointment-message">
             Message
           </label>
@@ -120,13 +120,13 @@ const Appointment = () => {
             id="appointment-message"
             placeholder="Message"
             rows="4"
-            className="w-full resize-none bg-transparent text-lg text-white placeholder:text-white/60 focus:outline-none"
+            className="w-full resize-none bg-transparent text-[13px] text-white placeholder:text-white/60 focus:outline-none md:text-lg"
           />
         </div>
       </div>
       <button
         type="submit"
-        className="w-full bg-[#1f8fe6] py-3 text-sm font-semibold uppercase cursor-pointer tracking-[0.2em] hover:bg-[#17a5fd]"
+        className="w-full bg-[#1f8fe6] py-2.5 text-[12px] font-semibold uppercase cursor-pointer tracking-[0.2em] hover:bg-[#17a5fd] md:py-3 md:text-sm"
       >
         Submit
       </button>
