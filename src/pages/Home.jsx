@@ -1,17 +1,17 @@
-import Header from '../components/header'
-import Hero from '../components/Hero'
-import Footer from '../components/Footer'
-import Specialties from '../components/specialties'
-import Appointment from '../components/appointment'
-import talkBanner from '../assets/photos/homepageImage/Rectangle 463.png'
-import talkBannerMobile from '../assets/photos/mobile/homepage/Rectangle 627.png'
-import talkButtonMobile from '../assets/photos/mobile/homepage/Rectangle 472.png'
-import welcomeImage from '../assets/photos/homepageImage/Group 9365.png'
-import whoImageTop from '../assets/photos/homepageImage/Rectangle 518.png'
-import whoImageBottom from '../assets/photos/homepageImage/Rectangle 517.png'
-import approachImage from '../assets/photos/homepageImage/people.png'
-import approachImage2 from '../assets/photos/homepageImage/Rectangle 13.png'
-import appointmentImage from '../assets/photos/homepageImage/Rectangle 539.png'
+import Header from "../components/header";
+import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import Specialties from "../components/specialties";
+import Appointment from "../components/appointment";
+import talkBanner from "../assets/photos/homepageImage/Rectangle 463.png";
+import talkBannerMobile from "../assets/photos/mobile/homepage/Rectangle 627.png";
+import talkButtonMobile from "../assets/photos/mobile/homepage/Rectangle 472.png";
+import welcomeImage from "../assets/photos/homepageImage/Group 9365.png";
+import whoImageTop from "../assets/photos/homepageImage/Rectangle 518.png";
+import whoImageBottom from "../assets/photos/homepageImage/Rectangle 517.png";
+import approachImage from "../assets/photos/homepageImage/people.png";
+import approachImage2 from "../assets/photos/homepageImage/Rectangle 13.png";
+import appointmentImage from "../assets/photos/homepageImage/Rectangle 539.png";
 
 const Home = () => {
   return (
@@ -52,7 +52,9 @@ const Home = () => {
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/70 sm:text-xs">
                   Emergency
                 </p>
-                <p className="text-sm font-semibold sm:text-base">(237) 681-812-255</p>
+                <p className="text-sm font-semibold sm:text-base">
+                  (237) 681-812-255
+                </p>
               </div>
             </button>
 
@@ -78,7 +80,9 @@ const Home = () => {
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500 sm:text-xs">
                   Work Hour
                 </p>
-                <p className="text-sm font-semibold sm:text-base">09:00 - 20:00 Everyday</p>
+                <p className="text-sm font-semibold sm:text-base">
+                  09:00 - 20:00 Everyday
+                </p>
               </div>
             </button>
 
@@ -104,7 +108,9 @@ const Home = () => {
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-white/70 sm:text-xs">
                   Location
                 </p>
-                <p className="text-sm font-semibold sm:text-base">0123 Some Place</p>
+                <p className="text-sm font-semibold sm:text-base">
+                  0123 Some Place
+                </p>
               </div>
             </button>
           </div>
@@ -133,13 +139,12 @@ const Home = () => {
         <section className="hidden sm:block">
           <div className="relative h-auto md:h-70">
             <div className="relative overflow-hidden bottom-0 md:bottom-20">
-              
               <img
                 src={talkBanner}
                 alt="Clinician and patient handshake"
                 className="h-full w-full object-cover sm:h-full"
               />
-              
+
               <div className="absolute inset-0 flex items-center justify-center">
                 <button
                   type="button"
@@ -162,7 +167,8 @@ const Home = () => {
                 A Great Place to Receive Clinical Care with Ethical Integrity
               </h2>
               <p className="mt-4 text-[20px] leading-[1.6] text-slate-900 sm:text-base">
-                At Medha Clinic, care begins with honesty. We believe patients deserve clarity, <br className="hidden md:block" />
+                At Medha Clinic, care begins with honesty. We believe patients
+                deserve clarity, <br className="hidden md:block" />
                 safety, and respect - not fear or rushed decisions.
               </p>
               <button
@@ -250,10 +256,10 @@ const Home = () => {
             </div>
           </div>
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 h-15 w-full scale-y-105 bg-gradient-to-b from-[#ffffff] via-[#d3ebfa] to-[#a7ddff] " 
+            className="pointer-events-none absolute bottom-0 left-0 h-15 w-full scale-y-105 bg-gradient-to-b from-[#ffffff] via-[#d3ebfa] to-[#a7ddff] "
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
-            aria-hidden="true" 
+            aria-hidden="true"
           >
             <path
               d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z"
@@ -263,7 +269,7 @@ const Home = () => {
           </svg>
         </section>
 
-        <section className="relative h-auto overflow-hidden bg-gradient-to-b from-[#f0f8fe] via-white to-[#089EF9] px-4 py-12 md:h-230 md:px-6 md:py-16">  
+        <section className="relative h-auto overflow-hidden bg-gradient-to-b from-[#f0f8fe] via-white to-[#089EF9] px-4 py-12 md:h-230 md:px-6 md:py-16">
           <svg
             className="absolute bottom-0 left-0 h-15 w-full"
             viewBox="0 0 1440 120"
@@ -380,8 +386,8 @@ const Home = () => {
 
               <div className="w-full h-auto p-5 md:w-140 md:h-130 md:p-7">
                 <p className="text-[15px] font-semibold leading-[1.6] text-slate-900 sm:text-2xl">
-                  People come to Medha Clinic when they feel confused, exhausted, or unheard in
-                  conventional healthcare settings.
+                  People come to Medha Clinic when they feel confused,
+                  exhausted, or unheard in conventional healthcare settings.
                 </p>
                 <div className="mt-4 grid gap-x-6 gap-y-3 text-[12px] font-semibold text-slate-600 sm:mt-6 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-4 sm:text-[18px]">
                   <div className="flex items-start gap-3">
@@ -410,7 +416,9 @@ const Home = () => {
                   </div>
                 </div>
                 <p className="mt-4 text-[13px] font-semibold italic leading-[1.5] text-[#1f2b6c] sm:mt-6 sm:text-[25px]">
-                  You do not come here to stop medical care. <br className="hidden md:block" /> You come here to understand your body better.
+                  You do not come here to stop medical care.{" "}
+                  <br className="hidden md:block" /> You come here to understand
+                  your body better.
                 </p>
               </div>
 
@@ -432,7 +440,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section >
+        </section>
 
         <section className="relative  overflow-hidden h-auto bg-white px-4 pt-10 pb-16 md:h-245 md:px-6 md:pb-28">
           <div className="relative  z-10 mx-auto grid gap-6 h-auto max-w-6xl md:gap-10">
@@ -475,57 +483,60 @@ const Home = () => {
         <section className="relative overflow-hidden h-auto bg-[#1f8fe6] px-4 pt-10 pb-12 text-white md:h-160 md:px-6 md:pt-16 md:pb-20">
           <div className="relative z-10 mx-auto max-w-6xl text-center">
             <h2 className="font-poppins text-[20px] font-semibold leading-[1.3] sm:text-4xl">
-              For ethical and medical reasons, Medha Clinic does not replace emergency or critical
-              hospital care.
+              For ethical and medical reasons, Medha Clinic does not replace
+              emergency or critical hospital care.
             </h2>
             <p className="mt-4 text-[14px] text-white/90 sm:text-[20px] ">
               Please seek immediate hospital care if there is:
             </p>
           </div>
 
-          <div className="relative z-10 mx-auto mt-6 max-w-6xl max-h-6xl bg-[linear-gradient(90deg,transparent_0%,transparent_0%,#ffffff_20%,#ffffff_50%,#ffffff_70%,transparent_100%,transparent_10%)] p-4 text-left justify-center items-center md:mt-8 md:p-6"
-          style={{
-                clipPath:
-                  "polygon(0 18%, 50% 0, 100% 18%, 100% 85%, 50% 100%, 0 85%)",
-              }} >
+          <div
+            className="relative z-10 mx-auto mt-6 max-w-6xl max-h-6xl bg-[linear-gradient(90deg,transparent_0%,transparent_0%,#ffffff_20%,#ffffff_50%,#ffffff_70%,transparent_100%,transparent_10%)] p-4 text-left justify-center items-center md:mt-8 md:p-6"
+            style={{
+              clipPath:
+                "polygon(0 18%, 50% 0, 100% 18%, 100% 85%, 50% 100%, 0 85%)",
+            }}
+          >
             <div className="items-center justify-center px-4 py-3 md:px-60 md:py-4">
-            <ul className="space-y-4 text-[13px] text-[#FF0022] font-semibold sm:text-xl">
-              {[
-                'Severe chest pain, stroke symptoms, or heavy bleeding',
-                'ICU requirement or surgical emergency',
-                'Acute trauma or life-threatening infection',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#ef4444] text-white sm:h-5 sm:w-5">
-                    <svg
-                      viewBox="0 0 16 16"
-                      className="h-2.5 w-2.5 sm:h-3 sm:w-3"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M4 4l8 8" />
-                      <path d="M12 4l-8 8" />
-                    </svg>
-                  </span>
-                  <span className="leading-relaxed ">{item}</span>
-                </li>
-              ))}
-            </ul>
+              <ul className="space-y-4 text-[13px] text-[#FF0022] font-semibold sm:text-xl">
+                {[
+                  "Severe chest pain, stroke symptoms, or heavy bleeding",
+                  "ICU requirement or surgical emergency",
+                  "Acute trauma or life-threatening infection",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="mt-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#ef4444] text-white sm:h-5 sm:w-5">
+                      <svg
+                        viewBox="0 0 16 16"
+                        className="h-2.5 w-2.5 sm:h-3 sm:w-3"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M4 4l8 8" />
+                        <path d="M12 4l-8 8" />
+                      </svg>
+                    </span>
+                    <span className="leading-relaxed ">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
           <p className="relative z-10 mx-auto mt-4 max-w-3xl text-center text-[16px] font-semibold italic leading-[1.5] text-white/90 sm:mt-6 sm:text-[30px]">
-            Our role is supportive and complementary <br className="hidden md:block" /> — not emergency-substitutive.
+            Our role is supportive and complementary{" "}
+            <br className="hidden md:block" /> — not emergency-substitutive.
           </p>
 
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-[#1f8fe6] " 
+            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-[#1f8fe6] "
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
-            aria-hidden="true" 
+            aria-hidden="true"
           >
             <path
               d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z"
@@ -556,15 +567,15 @@ const Home = () => {
               </div>
               <div className="rounded-[18px] bg-[#ffffff] p-4 md:rounded-2xl md:p-6">
                 <p className="text-[14px] font-semibold leading-[1.6] text-slate-900 sm:text-lg">
-                  We respect modern medicine. We work where chronic problems need deeper
-                  understanding, time, and listening.
+                  We respect modern medicine. We work where chronic problems
+                  need deeper understanding, time, and listening.
                 </p>
                 <div className="mt-4 space-y-3 text-[12px] leading-[1.6] text-slate-600 sm:mt-5 sm:text-base">
                   {[
-                    'We give time, not rushed consultations',
-                    'We focus on underlying imbalances, not just symptoms',
-                    'We individualise care, not one-size protocols',
-                    'We encourage calm decisions, not fear-based urgency',
+                    "We give time, not rushed consultations",
+                    "We focus on underlying imbalances, not just symptoms",
+                    "We individualise care, not one-size protocols",
+                    "We encourage calm decisions, not fear-based urgency",
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-3">
                       <span className="mt-2 h-2 w-2 rounded-full bg-[#1f8fe6] sm:h-2.5 sm:w-2.5" />
@@ -577,17 +588,16 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] px-4 pt-12 pb-12 text-white md:px-6 md:pt-20 md:pb-16">
-          
+        <section className="relative bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] px-4 pt-12 pb-12 text-white md:px-6 md:pt-20 md:pb-16">
           <div className="relative z-10 mx-auto grid max-w-6xl h-auto items-center pb-10 gap-6 md:h-100 md:pb-30 md:gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-            <div className="relative h-[400px]">
-  <img
-    src={approachImage}
-    alt="Clinician supporting patient care"
-    className="absolute -top-24 left-0 w-full h-full object-cover z-20"
-  />
-</div>
+              <div className="relative h-[400px] sm:hidden">
+                <img
+                  src={approachImage}
+                  alt="Clinician supporting patient care"
+                  className="absolute -top-24 left-5 w-full h-full object-cover z-20"
+                />
+              </div>
 
               <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70 sm:text-xs">
                 Treatment Philosophy (High-Level)
@@ -596,18 +606,19 @@ const Home = () => {
                 Our Treatment Philosophy
               </h2>
               <p className="mt-4 text-[13px] leading-[1.6] text-white/90 sm:text-base">
-                At Medha Clinic, treatment begins with understanding - not assumptions.
+                At Medha Clinic, treatment begins with understanding - not
+                assumptions.
               </p>
               <p className="mt-4 text-[13px] font-semibold text-white/90 sm:text-base">
                 Our approach involves:
               </p>
               <ul className="mt-4 space-y-2 text-[12px] leading-[1.6] text-white/90 sm:text-base">
                 {[
-                  'Listening carefully to patient history',
-                  'Reviewing medical reports in plain language',
-                  'Identifying internal imbalances affecting recovery',
-                  'Supporting the body through Natural Immunotherapy principles',
-                  'Monitoring progress gradually and ethically',
+                  "Listening carefully to patient history",
+                  "Reviewing medical reports in plain language",
+                  "Identifying internal imbalances affecting recovery",
+                  "Supporting the body through Natural Immunotherapy principles",
+                  "Monitoring progress gradually and ethically",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <span className="mt-2 h-2.5 w-2.5 rounded-full bg-white/80" />
@@ -616,12 +627,19 @@ const Home = () => {
                 ))}
               </ul>
               <p className="mt-5 text-[15px] font-semibold italic leading-[1.5] text-white/90 sm:mt-6 sm:text-xl">
-                We do not promise instant cures. <br className="hidden md:block" /> We focus on steady, measurable improvement.
+                We do not promise instant cures.{" "}
+                <br className="hidden md:block" /> We focus on steady,
+                measurable improvement.
               </p>
             </div>
-            
+             <div className="overflow-hidden ">
+              <img
+                src={approachImage}
+                alt="Clinician supporting patient care"
+                className="h-full w-full object-cover"
+              />
+             </div>
           </div>
-          
         </section>
 
         <section className="relative h-auto px-4 py-12 md:h-180 md:px-6 md:py-16">
@@ -664,10 +682,10 @@ const Home = () => {
             </div>
           </div>
           <svg
-            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-transparent " 
+            className="pointer-events-none absolute bottom-0 left-0 w-full h-15 scale-y-105 bg-transparent "
             viewBox="0 0 1440 120"
             preserveAspectRatio="none"
-            aria-hidden="true" 
+            aria-hidden="true"
           >
             <path
               d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,120 Z"
@@ -678,7 +696,7 @@ const Home = () => {
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
