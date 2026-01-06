@@ -4,6 +4,8 @@ import Footer from '../components/Footer'
 import Specialties from '../components/specialties'
 import Appointment from '../components/appointment'
 import talkBanner from '../assets/photos/homepageImage/Rectangle 463.png'
+import talkBannerMobile from '../assets/photos/mobile/homepage/Rectangle 627.png'
+import talkButtonMobile from '../assets/photos/mobile/homepage/Rectangle 472.png'
 import welcomeImage from '../assets/photos/homepageImage/Group 9365.png'
 import whoImageTop from '../assets/photos/homepageImage/Rectangle 518.png'
 import whoImageBottom from '../assets/photos/homepageImage/Rectangle 517.png'
@@ -18,7 +20,17 @@ const Home = () => {
       <main>
         <Hero />
         <section className="relative z-10 -mt-10 justify-items-center px-4 pb-8 bottom-0 md:-mt-15 md:px-6 md:pb-10 md:bottom-[30px]">
-          <div className="relative mx-auto grid w-full max-w-6xl gap-3 md:absolute md:gap-4 md:grid-cols-3">
+          <img
+            src={talkBannerMobile}
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover sm:hidden"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-0 bg-black/10 sm:hidden"
+          />
+          <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-3 md:absolute md:gap-4 md:grid-cols-3">
             <button
               type="button"
               className="flex w-full items-center cursor-pointer gap-3 translate-y-0 sm:translate-y-0 rounded-2xl bg-[#1f2b6c] px-4 py-6 text-left text-white shadow-[0_12px_26px_rgba(15,23,42,0.22)] sm:gap-4 sm:px-6 sm:py-4"
@@ -96,10 +108,32 @@ const Home = () => {
               </div>
             </button>
           </div>
+          <div className="relative z-10 mt-6 flex justify-center translate-y-15 sm:hidden">
+            <div className="relative w-[290px]">
+              <img
+                src={talkButtonMobile}
+                alt="Talk to Our Team"
+                useMap="#talk-team-map"
+                className="h-auto w-full drop-shadow-[0_6px_10px_rgba(15,23,42,0.25)]"
+              />
+              <map name="talk-team-map">
+                <area
+                  shape="rect"
+                  coords="0,0,1236,423"
+                  href="#"
+                  alt="Talk to Our Team"
+                />
+              </map>
+              <span className="pointer-events-none absolute inset-0 flex items-center justify-center text-lg font-semibold text-white">
+                Talk to Our Team
+              </span>
+            </div>
+          </div>
         </section>
-        <section>
+        <section className="hidden sm:block">
           <div className="relative h-auto md:h-70">
             <div className="relative overflow-hidden bottom-0 md:bottom-20">
+              
               <img
                 src={talkBanner}
                 alt="Clinician and patient handshake"
@@ -120,13 +154,14 @@ const Home = () => {
         <section className="relative overflow-hidden bg-white px-4 pt-10 pb-16 md:px-6 md:pt-16 md:pb-24">
           <div className="relative z-10">
             <div className="mx-auto max-w-6xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#1f8fe6]">
-                Welcome to Medha Clinic
+              <p className="text-[20px] sm:text-lg font-bold uppercase tracking-[0.2em] text-[#1f8fe6]">
+                <span className="block sm:inline">Welcome to</span>
+                <span className="block sm:inline"> Medha Clinic</span>
               </p>
-              <h2 className="mt-3 font-poppins text-[20px] font-semibold leading-[1.3] text-[#1f2b6c] sm:text-3xl">
+              <h2 className="mt-3 font-poppins text-[25px] font-bold leading-[1.3] text-[#1F2B6C] sm:text-3xl">
                 A Great Place to Receive Clinical Care with Ethical Integrity
               </h2>
-              <p className="mt-4 text-[13px] leading-[1.6] text-slate-600 sm:text-base">
+              <p className="mt-4 text-[20px] leading-[1.6] text-slate-900 sm:text-base">
                 At Medha Clinic, care begins with honesty. We believe patients deserve clarity, <br className="hidden md:block" />
                 safety, and respect - not fear or rushed decisions.
               </p>
@@ -150,11 +185,11 @@ const Home = () => {
               </button>
             </div>
 
-            <div className="mx-auto mt-6 max-w-6xl overflow-hidden rounded-b-[5px] bg-white md:mt-10">
+            <div className="mt-6 max-w-full scale-x-110 sm:scale-x-100 overflow-hidden rounded-b-[5px] bg-white  md:mt-10 sm:mx-auto sm:max-w-6xl">
               <img
                 src={welcomeImage}
                 alt="Medha Clinic care team"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
               />
               <div className="bg-gradient-to-r from-[#cfe9ff] via-white to-[#f0f7ff] px-6 py-4 text-center">
                 <p className="font-poppins text-[16px] font-semibold text-[#1f2b6c] sm:text-2xl">
@@ -399,8 +434,8 @@ const Home = () => {
           </div>
         </section >
 
-        <section className="relative overflow-hidden h-auto bg-white px-4 pt-10 pb-16 md:h-245 md:px-6 md:pb-28">
-          <div className="relative z-10 mx-auto grid gap-6 h-auto max-w-6xl md:gap-10">
+        <section className="relative  overflow-hidden h-auto bg-white px-4 pt-10 pb-16 md:h-245 md:px-6 md:pb-28">
+          <div className="relative  z-10 mx-auto grid gap-6 h-auto max-w-6xl md:gap-10">
             <div className="text-center">
               <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#1f8fe6] md:text-lg">
                 Always Caring

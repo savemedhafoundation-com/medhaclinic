@@ -3,7 +3,7 @@ import heroImageMobile from '../assets/photos/mobile/homepage/mobileRectangle 64
 
 const Hero = () => {
   return (
-    <section className=" bg-[#e5e5e5] xl:-mt-45 lg:-mt-50 md:-mt-50">
+    <section className=" bg-[#e5e5e5] -mt-25 sm:mt-0 md:-mt-50 lg:-mt-50 xl:-mt-45">
       <div className="mx-auto max-w-full ">
         <div
           className="relative h-[520px] overflow-hidden bg-cover bg-center bg-no-repeat px-5 py-8 shadow-[0_6px_16px_rgba(15,23,42,0.12)] sm:h-200 sm:px-50 sm:py-12"
@@ -13,13 +13,17 @@ const Hero = () => {
             src={heroImageMobile}
             alt=""
             aria-hidden="true"
-            className="absolute inset-0 h-full w-full object-cover sm:hidden"
+            className="absolute inset-0 h-full w-full object-cover sm:hidden "
           />
-          <div className="relative z-10 max-w-[320px] text-white sm:max-w-6xl">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,#117BBD_0%,#2BAEFF_40%,#2BAEFF_70%,#FFFFFF_100%)] opacity-80 sm:hidden"
+          />
+          <div className="relative z-10 max-w-[320px] top-12 text-white sm:max-w-6xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80 hidden sm:!hidden ">
               Doctor-guided natural immunotherapy
             </p>
-            <h1 className="mt-6 font-poppins text-[35px] font-semibold leading-[1.2] drop-shadow-sm sm:mt-30 sm:text-6xl sm:leading-tight">
+            <h1 className="mt-6 font-poppins text-[31px] font-semibold leading-[1.2] drop-shadow-sm sm:mt-30 sm:text-6xl sm:leading-tight">
               <span className="block">When Hospital Feels</span>
               <span className="block">Overwhelming, We Help You</span>
               <span className="block">Heal - Naturally & Carefully.</span>
