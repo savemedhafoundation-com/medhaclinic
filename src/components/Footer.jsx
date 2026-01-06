@@ -5,6 +5,16 @@ import linkedinIcon from "../assets/social_icons/LinkedIn 2.png";
 import whatsappIcon from "../assets/social_icons/WhatsApp.png";
 import youtubeIcon from "../assets/social_icons/YouTube Logo.png";
 import footerPattern from "../assets/photos/homepageImage/Object 28.png";
+import { FaRedditAlien } from "react-icons/fa";
+
+const renderSocialIcon = (item, className) => {
+  if (typeof item.icon === "string") {
+    return <img src={item.icon} alt={item.name} className={className} />;
+  }
+
+  const Icon = item.icon;
+  return <Icon className={className} aria-hidden="true" focusable="false" />;
+};
 
 const Footer = () => {
   const exploreLinks = [
@@ -48,6 +58,11 @@ const Footer = () => {
       name: "YouTube",
       href: "https://www.youtube.com/@savemedhafoundation7959",
       icon: youtubeIcon,
+    },
+    {
+      name: "Reddit",
+      href: "https://www.reddit.com",
+      icon: FaRedditAlien,
     },
   ];
 
@@ -131,8 +146,9 @@ const Footer = () => {
                       className="rounded-full transition hover:opacity-50"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label={item.name}
                     >
-                      <img src={item.icon} alt={item.name} className="h-5 w-5" />
+                      {renderSocialIcon(item, "h-5 w-5")}
                     </a>
                   ))}
                 </div>
@@ -169,8 +185,9 @@ const Footer = () => {
                 className="rounded-full fo transition hover:opacity-50 px-1"
                 target="_blank"
                 rel="noreferrer"
+                aria-label={item.name}
               >
-                <img src={item.icon} alt={item.name} className="h-6 w-6 md:h-8 md:w-7" />
+                {renderSocialIcon(item, "h-6 w-6 md:h-8 md:w-7")}
               </a>
             ))}
           </div>

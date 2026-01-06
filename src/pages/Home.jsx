@@ -19,7 +19,7 @@ const Home = () => {
       <Header />
       <main>
         <Hero />
-        <section className="relative z-10 -mt-10 justify-items-center px-4 pb-8 bottom-0 md:-mt-15 md:px-6 md:pb-10 md:bottom-[30px]">
+        <section className="relative z-10  -mt-10 justify-items-center px-4 pb-8 bottom-0 md:-mt-15 md:px-6 md:pb-10 md:bottom-[30px]">
           <img
             src={talkBannerMobile}
             alt=""
@@ -581,6 +581,14 @@ const Home = () => {
           
           <div className="relative z-10 mx-auto grid max-w-6xl h-auto items-center pb-10 gap-6 md:h-100 md:pb-30 md:gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
+            <div className="relative h-[400px]">
+  <img
+    src={approachImage}
+    alt="Clinician supporting patient care"
+    className="absolute -top-24 left-0 w-full h-full object-cover z-20"
+  />
+</div>
+
               <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70 sm:text-xs">
                 Treatment Philosophy (High-Level)
               </p>
@@ -611,13 +619,7 @@ const Home = () => {
                 We do not promise instant cures. <br className="hidden md:block" /> We focus on steady, measurable improvement.
               </p>
             </div>
-            <div className="overflow-hidden ">
-              <img
-                src={approachImage}
-                alt="Clinician supporting patient care"
-                className="h-full w-full object-cover"
-              />
-            </div>
+            
           </div>
           
         </section>
