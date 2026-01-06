@@ -632,7 +632,7 @@ const Home = () => {
                 measurable improvement.
               </p>
             </div>
-             <div className="overflow-hidden ">
+             <div className="overflow-hidden hidden sm:block">
               <img
                 src={approachImage}
                 alt="Clinician supporting patient care"
