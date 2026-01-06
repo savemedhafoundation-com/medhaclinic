@@ -663,11 +663,11 @@ const Home = () => {
             />
           </svg>
           <div className="relative z-10 mx-auto grid max-w-6xl h-auto items-start pt-10 gap-6 md:h-100 md:pt-20 md:gap-12 lg:grid-cols-[1fr_1.05fr]">
-            <div className="max-w-full text-[#1f2b6c] md:max-w-md">
+            <div className="max-w-full text-[#1f2b6c] md:max-w-md -translate-y-8 sm:-translate-y-0">
               <h2 className="font-poppins text-[20px] font-semibold leading-[1.2] text-[#1f8fe6] sm:text-3xl">
                 Book an Appointment
               </h2>
-              <ol className="mt-3 space-y-1.5 text-[12px] leading-[1.6] text-slate-700 sm:text-base">
+              <ol className="mt-3 space-y-1.5 text-[12px] leading-[1.6] text-slate-700  sm:text-base">
                 <li>1. You share your reports and health history</li>
                 <li>2. We listen without judgment or pressure</li>
                 <li>3. Medha Clinic explains findings clearly</li>
@@ -676,7 +676,7 @@ const Home = () => {
               </ol>
             </div>
             <div className="flex w-full justify-center lg:justify-end">
-              <div className="w-full max-w-lg">
+              <div className="w-full max-w-lg -translate-y-8 sm:-translate-y-0">
                 <Appointment />
               </div>
             </div>
