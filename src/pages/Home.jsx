@@ -191,7 +191,7 @@ const Home = () => {
               </button>
             </div>
 
-            <div className="mt-6 max-w-full scale-x-110 sm:scale-x-100 overflow-hidden rounded-b-[5px] bg-white  md:mt-10 sm:mx-auto sm:max-w-6xl">
+            <div className="mt-6 max-w-full scale-x-100 sm:scale-x-110 overflow-hidden rounded-b-[5px] bg-white  md:mt-10 sm:mx-auto sm:max-w-6xl">
               <img
                 src={welcomeImage}
                 alt="Medha Clinic care team"

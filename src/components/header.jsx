@@ -19,6 +19,7 @@ const Header = () => {
       dropdown: ['Patient Guidelines'],
     },
     { label: 'About Us', href: '#' },
+    { label: 'Blogs', href: '#' },
   ]
 
 const [isScrolled, setIsScrolled] = useState(false);
