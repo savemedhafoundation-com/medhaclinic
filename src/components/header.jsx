@@ -6,7 +6,7 @@ import MobileMenu from './MobileMenu'
 
 const Header = () => {
   const navItems = [
-    { label: 'Home', href: '#' },
+    { label: 'Home', href: '/' },
     { label: 'Why Medha Clinic', href: '#' },
     {
       label: 'Treatment Process',
@@ -19,7 +19,7 @@ const Header = () => {
       dropdown: ['Patient Guidelines'],
     },
     { label: 'About Us', href: '#' },
-    { label: 'Blogs', href: '#' },
+    { label: 'Blogs', href: '/blogs' },
   ]
 
 const [isScrolled, setIsScrolled] = useState(false);
