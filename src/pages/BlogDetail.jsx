@@ -38,7 +38,8 @@ const formatDate = (value) => {
 
 const BlogDetail = () => {
   const { id } = useParams()
-  const [blog, setBlog] = useState(null)
+  const [blog, setBlog] = useState(null);
+  console.log("blog", blog);
   const [status, setStatus] = useState({ loading: true, error: '' })
   const [commentForm, setCommentForm] = useState({
     name: '',
@@ -193,7 +194,7 @@ const BlogDetail = () => {
       return (
         <div
           key={`html-${index}`}
-          className="prose prose-slate max-w-none"
+          className="prose prose-slate max-w-none ql-editor"
           dangerouslySetInnerHTML={{ __html: part }}
         />
       )

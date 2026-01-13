@@ -10,3 +10,21 @@
 .font-poppins {
   font-family: 'Poppins', 'Open Sans', sans-serif;
 }
+
+.ql-editor ul,
+.ql-editor ol {
+  padding-left: 1.25em;
+  margin: 0.75em 0;
+}
+
+.ql-editor ul {
+  list-style-type: disc;
+}
+
+.ql-editor ol {
+  list-style-type: decimal;
+}
+
+.ql-editor li {
+  margin: 0.25em 0;
+}
