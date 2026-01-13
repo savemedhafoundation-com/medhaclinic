@@ -79,11 +79,11 @@ const Footer = () => {
       <div className="relative z-10 mx-auto w-full max-w-screen-4xl px-4 sm:px-6 lg:px-10 xl:px-16 pt-12 pb-6 md:pt-20 md:pb-8">
 
   <div className="text-center">
-    <h2 className="mx-auto max-w-2xl text-center font-['Playfair_Display'] text-[22px] font-bold leading-[1.15] sm:text-6xl">
+    <h2 className="mx-auto max-w-2xl text-center font-['Playfair_Display'] text-[22px] font-bold leading-[1.15] sm:text-5xl">
       Connect with Medha Clinic
     </h2>
 
-    <p className="mx-auto mt-6 max-w-2xl text-left text-[12px] leading-[1.6] text-white sm:mt-8 sm:text-[22px]">
+    <p className="mx-auto mt-6 max-w-2xl text-center text-[12px] leading-[1.6] text-white sm:mt-8 sm:text-[22px]">
       Better health begins with a simple hello. Our team is ready to
       collaborate with you to reach your wellness goals by phone, email,
       or visit us in person. We look forward to seeing you.
@@ -99,7 +99,7 @@ const Footer = () => {
 
   <div className="mt-6 h-0.5 bg-white md:mt-8" />
 
-  <div className="mt-6 text-[12px] md:mt-10 md:text-sm">
+  <div className="mt-6 max-w-8xl text-[12px] md:mt-10 md:text-sm md:leading-[1.6] md:ml-40">
     <div className="flex flex-col gap-6 md:grid md:grid-cols-[1.5fr_1fr_1fr_1fr] md:gap-8">
 
       <div className="flex flex-col items-center text-center md:items-start md:text-left">
@@ -152,7 +152,7 @@ const Footer = () => {
     </div>
   </div>
 
-  <div className="mt-6 flex items-center justify-between text-[12px] font-semibold text-white/90 md:text-lg">
+  {/* <div className="mt-6 flex items-center justify-between text-[12px] font-semibold text-white/90 md:text-lg">
     <a href="#" className="hover:text-white">
       Privacy policy
     </a>
@@ -160,7 +160,7 @@ const Footer = () => {
     <a href="#" className="hover:text-white">
       Terms of care
     </a>
-  </div>
+  </div> */}
 
   <div className="mt-6 rounded-md bg-white px-4 py-2 text-center text-[10px] font-medium text-black md:text-sm">
     Copyright 2025 Medha Clinic. All rights reserved.
