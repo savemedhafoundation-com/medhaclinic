@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Header from '../components/header'
-import Footer from '../components/Footer'
 import {
   blogApiBase,
   fetchBlogCategories,
@@ -199,7 +197,6 @@ const Blogs = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Source_Sans_3'] text-slate-900">
-      <Header />
       <main>
         <section className="relative overflow-hidden bg-gradient-to-br from-[#e6f2ff] via-white to-[#f9fbff] px-4 pt-16 pb-14 md:px-6">
           <div className="mx-auto max-w-6xl">
@@ -488,7 +485,6 @@ const Blogs = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   )
 }

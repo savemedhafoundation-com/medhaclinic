@@ -70,6 +70,19 @@ const Footer = () => {
     <footer
       className="relative h-auto overflow-hidden bg-gradient-to-b from-[#1f8fe6] via-[#1b5fb8] to-[#1f2b6c] text-white"
     >
+
+       {/* <svg
+              className="pointer-events-none absolute -top-15 left-0 hidden h-16 w-full sm:block sm:z-10"
+              viewBox="0 0 1440 120"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M0,0 C240,80 480,120 720,120 C960,120 1200,80 1440,0 L1440,120 L0,130 Z"
+                fill="#e61313"
+              />
+            </svg> */}
+
       <img
         src={footerPattern}
         alt=""
@@ -78,7 +91,9 @@ const Footer = () => {
       />
       <div className="relative z-10 mx-auto w-full max-w-screen-4xl px-4 sm:px-6 lg:px-10 xl:px-16 pt-12 pb-6 md:pt-20 md:pb-8">
 
-  <div className="text-center">
+  <div className="text-center relative">
+  
+     
     <h2 className="mx-auto max-w-2xl text-center font-['Playfair_Display'] text-[22px] font-bold leading-[1.15] sm:text-5xl">
       Connect with Medha Clinic
     </h2>

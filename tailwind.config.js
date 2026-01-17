@@ -3,10 +3,11 @@ export default {
   plugins: [],
   theme: {
     extend: {
-       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+      fontFamily: {
+        yeseva: ['Yeseva One', 'serif'],
+        worksans: ['Work Sans', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
-       poppins: ['Poppins', 'sans-serif'],
     },
   },
 }

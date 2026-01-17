@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { MdClose } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const MobileMenu = ({ isOpen, onClose, items = [] }) => {
   useEffect(() => {
@@ -55,24 +56,34 @@ const MobileMenu = ({ isOpen, onClose, items = [] }) => {
         <nav className="flex flex-col">
           {items.map((item) => (
             <div key={item.label} className="border-b border-slate-100">
-              <a
-                href={item.href}
-                onClick={onClose}
-                className="block px-5 py-4 text-[15px] font-semibold text-slate-800 active:bg-slate-100"
-              >
-                {item.label}
-              </a>
+              {item.href?.startsWith('/') ? (
+                <Link
+                  to={item.href}
+                  onClick={onClose}
+                  className="block px-5 py-4 text-[15px] font-semibold text-slate-800 active:bg-slate-100"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="block w-full px-5 py-4 text-left text-[15px] font-semibold text-slate-800 active:bg-slate-100"
+                >
+                  {item.label}
+                </button>
+              )}
               {item.dropdown ? (
                 <div className="flex flex-col gap-1 pb-3">
                   {item.dropdown.map((subItem) => (
-                    <a
+                    <button
                       key={subItem}
-                      href="#"
+                      type="button"
                       onClick={onClose}
-                      className="px-8 py-2 text-[13px] font-medium text-slate-600 active:bg-slate-100"
+                      className="px-8 py-2 text-left text-[13px] font-medium text-slate-600 active:bg-slate-100"
                     >
                       {subItem}
-                    </a>
+                    </button>
                   ))}
                 </div>
               ) : null}

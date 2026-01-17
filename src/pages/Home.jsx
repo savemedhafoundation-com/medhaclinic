@@ -1,6 +1,4 @@
-import Header from "../components/header";
 import Hero from "../components/Hero";
-import Footer from "../components/Footer";
 import Specialties from "../components/specialties";
 import Appointment from "../components/appointment";
 import talkBanner from "../assets/photos/homepageImage/Rectangle 463.png";
@@ -16,7 +14,6 @@ import appointmentImage from "../assets/photos/homepageImage/Rectangle 539.png";
 const Home = () => {
   return (
     <div className="min-h-screen bg-white font-['Source_Sans_3'] text-slate-900">
-      <Header />
       <main>
         <Hero />
         <section className="relative z-10  -mt-10 justify-items-center px-4 pb-8 bottom-0 md:-mt-15 md:px-6 md:pb-10 md:bottom-[30px]">
@@ -159,14 +156,15 @@ const Home = () => {
         <section className="relative overflow-hidden bg-white px-4 pt-10 pb-16 md:px-6 md:pt-16 md:pb-24">
           <div className="relative z-10">
             <div className="mx-auto max-w-6xl text-center">
-              <p className="text-[20px] sm:text-lg font-bold uppercase tracking-[0.2em] text-[#1f8fe6]">
+              <p className="text-xl sm:text-lg font-extrabold uppercase tracking-[0.4em] text-[#1f8fe6]">
                 <span className="block sm:inline">Welcome to</span>
                 <span className="block sm:inline"> Medha Clinic</span>
+                {/* text-xl font-extrabold uppercase tracking-[0.4em] text-[#1f8fe6] */}
               </p>
-              <h2 className="mt-3 font-poppins text-[25px] font-bold leading-[1.3] text-[#1F2B6C] sm:text-3xl">
+              <h2 className="mt-3 font-yeseva text-[25px] font-normal antialiased leading-[1.3] text-[#1F2B6C] sm:text-3xl">
                 A Great Place to Receive Clinical Care with Ethical Integrity
               </h2>
-              <p className="mt-4 text-[20px] leading-[1.6] text-slate-900 sm:text-base">
+              <p className="mt-4 text-[20px] leading-[1.8] text-[#00000] sm:text-lg sm:tracking-widest">
                 At Medha Clinic, care begins with honesty. We believe patients
                 deserve clarity, <br className="hidden md:block" />
                 safety, and respect - not fear or rushed decisions.
@@ -283,10 +281,11 @@ const Home = () => {
           </svg>
           <div className="mx-auto mt-2 max-w-6xl md:mt-5">
             <div className="text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[#1f8fe6]">
+              <p className="text-xl font-extrabold uppercase tracking-[0.4em] text-[#1f8fe6]">
                 Who Medha Clinic Is For
               </p>
-              <h2 className="mt-2 font-poppins text-[20px] font-semibold leading-[1.25] text-[#1f2b6c] sm:text-4xl">
+              {/*  <h2 className="mt-3 font-yeseva text-[25px] font-normal antialiased leading-[1.3] text-[#1F2B6C] sm:text-3xl"> */}
+              <h2 className="mt-3 font-yeseva  text-[20px] font-normal leading-[1.3] text-[#1f2b6c] antialiased sm:text-3xl">
                 Who Usually Comes to Medha Clinic
               </h2>
             </div>
@@ -445,10 +444,11 @@ const Home = () => {
         <section className="relative  overflow-hidden h-auto bg-white px-4 pt-10 pb-16 md:h-245 md:px-6 md:pb-28">
           <div className="relative  z-10 mx-auto grid gap-6 h-auto max-w-6xl md:gap-10">
             <div className="text-center">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.4em] text-[#1f8fe6] md:text-lg">
+              <p className="text-xl font-extrabold uppercase tracking-[0.4em] text-[#1f8fe6] md:text-lg">
                 Always Caring
               </p>
-              <h2 className="mt-2 font-poppins text-[20px] font-semibold leading-[1.3] text-[#1f2b6c] sm:text-4xl">
+                {/* <h2 className="mt-3 font-yeseva text-[25px] font-normal antialiased leading-[1.3] text-[#1F2B6C] sm:text-3xl"></h2> */}
+              <h2 className="mt-3 font-yeseva text-[25px] font-normal leading-[1.3] text-[#1f2b6c] antialiased sm:text-3xl">
                 Our Specialties
               </h2>
             </div>
@@ -474,7 +474,7 @@ const Home = () => {
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70 md:text-lg md:tracking-[0.35em]">
               Who Medha Clinic Is Not For (Safety Boundary)
             </p>
-            <h2 className="mt-3 font-poppins text-[20px] font-semibold leading-[1.25] sm:text-4xl">
+            <h2 className="mt-3 font-yeseva text-[25px] font-normal leading-[1.3] sm:text-3xl">
               Important Safety Notice
             </h2>
           </div>
@@ -552,7 +552,7 @@ const Home = () => {
               <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-[#159EEC] md:text-[15px]">
                 How Medha Clinic Is Different
               </p>
-              <h2 className="mt-2 font-poppins text-[20px] font-semibold leading-[1.25] text-[#1f2b6c] sm:text-4xl">
+              <h2 className="mt-3 font-yeseva text-[25px] font-normal leading-[1.25] text-[#1f2b6c] sm:text-3xl">
                 How Our Approach Is Different
               </h2>
             </div>
@@ -602,7 +602,7 @@ const Home = () => {
               <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-white/70 sm:text-xs">
                 Treatment Philosophy (High-Level)
               </p>
-              <h2 className="mt-2 font-poppins text-[20px] font-semibold leading-[1.3] sm:text-4xl">
+              <h2 className="mt-3 font-yeseva text-[25px] font-semibold leading-[1.3] sm:text-3xl">
                 Our Treatment Philosophy
               </h2>
               <p className="mt-4 text-[13px] leading-[1.6] text-white/90 sm:text-base">
@@ -694,7 +694,6 @@ const Home = () => {
           </svg>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

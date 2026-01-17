@@ -2,12 +2,13 @@ import logo from '../assets/photos/homepageImage/Asset24.png'
 import mobileLogo from '../assets/photos/mobile/homepage/mobileheaderlogo.png'
 import { useEffect, useState } from "react";
 import { MdMenu, MdSearch } from "react-icons/md";
+import { Link } from "react-router-dom";
 import MobileMenu from './MobileMenu'
 
 const Header = () => {
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'Why Medha Clinic', href: '#' },
+    { label: 'Why Medha Clinic', href: '/whymedhaclinic' },
     {
       label: 'Treatment Process',
       href: '#',
@@ -72,7 +73,13 @@ useEffect(() => {
           </div>
           <div className={`hidden md:grid grid-cols-[auto_auto] items-center gap-3 rounded-[14px] border border-[#b9d7f2] px-3 py-2 shadow-[0_2px_10px_rgba(15,23,42,0.08)] md:grid-cols-[auto_1fr_auto] md:gap-6 md:rounded-2xl md:px-0 md:py-3 md:pl-10 lg:pl-45 ${isScrolled ? "backdrop-blur-lg bg-white/70" : " bg-white"}`}>
             <div className="flex items-center">
-              <img src={logo} alt="Medha Clinic logo" className="h-8 w-auto cursor-pointer md:h-10 lg:h-12" />
+              <Link to="/">
+                <img
+                  src={logo}
+                  alt="Medha Clinic logo"
+                  className="h-8 w-auto cursor-pointer md:h-10 lg:h-12"
+                />
+              </Link>
             </div>
             <nav
               className="hidden items-center justify-center font-medium text-slate-700 md:flex md:gap-4 md:text-[14px] lg:gap-15 lg:text-[17px]"
@@ -80,39 +87,48 @@ useEffect(() => {
             >
               {navItems.map((item) => (
                 <div key={item.label} className="relative group">
-                  <a
-                    href={item.href}
-                    className="inline-flex items-center gap-1 px-1 py-1 text-center leading-tight hover:text-slate-900"
-                  >
-                    {item.label}
-                    {item.dropdown ? (
-                      <svg
-                        className="mt-0.5 h-3 w-3 text-slate-600"
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3 4.5L6 7.5L9 4.5"
-                          stroke="currentColor"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    ) : null}
-                  </a>
+                  {item.href?.startsWith("/") ? (
+                    <Link
+                      to={item.href}
+                      className="inline-flex items-center gap-1 px-1 py-1 text-center leading-tight hover:text-slate-900"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <button
+                      type="button"
+                      className="inline-flex items-center gap-1 px-1 py-1 text-center leading-tight hover:text-slate-900"
+                    >
+                      {item.label}
+                      {item.dropdown ? (
+                        <svg
+                          className="mt-0.5 h-3 w-3 text-slate-600"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3 4.5L6 7.5L9 4.5"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      ) : null}
+                    </button>
+                  )}
                   {item.dropdown ? (
                     <div className="absolute left-1/2 top-full z-50 w-41 -translate-x-1/2 pt-2 opacity-0 invisible transition group-hover:visible group-hover:opacity-100">
                       <div className="rounded-lg bg-[#1f8fe6] px-2 py-2 lg:text-[14px] md:text-[12px] text-white shadow-lg">
                         {item.dropdown.map((dropItem) => (
-                          <a
+                          <button
                             key={dropItem}
-                            href="#"
-                            className="block rounded px-2 py-1 hover:bg-white/10"
+                            type="button"
+                            className="block w-full rounded px-2 py-1 text-left hover:bg-white/10"
                           >
                             {dropItem}
-                          </a>
+                          </button>
                         ))}
                       </div>
                     </div>

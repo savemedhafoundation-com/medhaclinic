@@ -5,8 +5,6 @@ import { FaXTwitter } from 'react-icons/fa6'
 import { FiCopy } from 'react-icons/fi'
 import { MdEmail } from 'react-icons/md'
 import { IoClose } from 'react-icons/io5'
-import Header from '../components/header'
-import Footer from '../components/Footer'
 import {
   addBlogComment,
   blogApiBase,
@@ -349,7 +347,6 @@ const BlogDetail = () => {
 
   return (
     <div className="min-h-screen bg-[#f3f1ec] text-slate-900">
-      <Header />
       <section
         className="bg-[#f3f1ec] text-slate-900"
         style={{ fontFamily: '"Source Sans 3", sans-serif' }}
@@ -703,7 +700,6 @@ const BlogDetail = () => {
           </div>
         )}
       </section>
-      <Footer />
     </div>
   )
 }
