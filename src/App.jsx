@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Blogs from './pages/Blogs'
 import BlogDetail from './pages/BlogDetail'
 import WhyMedha from './pages/WhyMedha'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<BlogDetail />} />
         <Route path="/whymedhaclinic" element={<WhyMedha />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </>
