@@ -12,6 +12,7 @@ const Footer = () => {
 
   const legalLinks = [
     { label: "Privacy policy", to: "/privacy-policy" },
+    { label: "Delete account request", to: "/delete-account" },
     { label: "Medical disclaimer" },
     { label: "Patient consent" },
     { label: "Terms of care" },
