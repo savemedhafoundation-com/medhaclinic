@@ -9,6 +9,7 @@ const Header = () => {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'Why Medha Clinic', href: '/whymedhaclinic' },
+    { label: 'Download App', href: '/download-app' },
     {
       label: 'Treatment Process',
       href: '#',

@@ -7,6 +7,7 @@ import BlogDetail from './pages/BlogDetail'
 import WhyMedha from './pages/WhyMedha'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import DeleteAccount from './pages/DeleteAccount'
+import DownloadApp from './pages/DownloadApp'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<BlogDetail />} />
         <Route path="/whymedhaclinic" element={<WhyMedha />} />
+        <Route path="/download-app" element={<DownloadApp />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/delete-account" element={<DeleteAccount />} />
       </Routes>

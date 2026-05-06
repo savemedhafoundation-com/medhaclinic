@@ -6,12 +6,14 @@ const Footer = () => {
   const exploreLinks = [
     { label: "Home", to: "/" },
     { label: "Why Medha Clinic", to: "/whymedhaclinic" },
+    { label: "Download App", to: "/download-app" },
     { label: "Blogs", to: "/blogs" },
     { label: "Contact", href: "mailto:info@medhaclinic.com" },
   ];
 
   const legalLinks = [
     { label: "Privacy policy", to: "/privacy-policy" },
+    { label: "Download app", to: "/download-app" },
     { label: "Delete account request", to: "/delete-account" },
     { label: "Medical disclaimer" },
     { label: "Patient consent" },

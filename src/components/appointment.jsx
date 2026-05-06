@@ -1,4 +1,4 @@
-const Appointment = () => {
+              const Appointment = () => {
   return (
     <form className="overflow-hidden rounded-[5px] bg-[#1f2b6c] text-white shadow-[0_20px_40px_rgba(15,23,42,0.25)]">
       <div className="grid grid-cols-1 gap-px bg-white/10 md:grid-cols-2">
