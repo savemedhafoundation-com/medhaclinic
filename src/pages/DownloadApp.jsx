@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { MdAndroid, MdDownload, MdVerifiedUser } from 'react-icons/md'
-import appApk from '../assets/apk/app-release.apk?url'
 import { usePageMetadata } from '../hooks/usePageMetadata'
 
+const APP_DOWNLOAD_URL =
+  'https://nktapycq643gtcku.public.blob.vercel-storage.com/medhaclinic/app-release.apk'
 const APK_FILE_NAME = 'MedhaClinic.apk'
 const APK_FILE_SIZE = '129 MB'
 
@@ -41,7 +42,7 @@ const DownloadApp = () => {
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
-                  href={appApk}
+                  href={APP_DOWNLOAD_URL}
                   download={APK_FILE_NAME}
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1f8fe6] px-6 py-3 text-[15px] font-semibold text-white shadow-[0_10px_20px_rgba(31,143,230,0.25)] transition hover:bg-[#1697eb] sm:text-base"
                 >
